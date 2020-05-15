@@ -3,10 +3,438 @@
 <head>
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Poiret+One|Tenor+Sans&display=swap" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <title>My Sampal Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}
 
+.mainwrapper{
+	width:100%;
+	
+	
+}
+
+.banner{
+	background-image:url("../Img/bannertwo.jpg");
+	color: #fff;
+	border-top: solid #000F86 15px;
+	box-shadow: 1px 1px 20px 1px #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px
+
+}
+
+#TopLogoText{
+	letter-spacing: 4px;
+	margin:0 0 0 10px;
+	font-family: 'Tenor Sans', sans-serif;
+	transition: width 2s;
+	border-bottom: red 1px solid;
+	width:1px
+}
+#TopLogoText:hover {
+	width: 100px;
+}
+#WelcomeText{
+	text-align: center;
+	margin-top: 120px;
+	font-size: 50px;
+	font-family: 'Poiret One', cursive;
+	letter-spacing: 4px;
+
+}
+.menum {
+	display: none;
+	color: #fff;
+	float: right;
+	padding: 10px;
+	width: 10%;
+	
+}
+.banner .nav ul{
+	float: right;
+	margin-top: 10px;
+	display: flex;
+}
+.banner .nav ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+	cursor: pointer;
+	transition: color 1s;
+	
+}
+
+.banner .nav ul li:hover{
+	color:#ADADAD;
+}
+
+.middleWrapper{
+	width:100%;
+	border: #000000 solid 1px;
+	position: relative;
+	
+}
+
+.boxSize{
+	width:20%;
+	border-left: solid #BBBBBB 1px;
+	display: inline-block;
+	margin-left: 50px;
+	height: 150px;
+	margin-top: 80px;
+	padding:50px;
+	cursor: pointer;
+
+}
+.boxS{
+	width:20%;
+	display: inline-block;
+	margin-left: 50px;
+	height: 150px;
+	margin-top: 80px;
+	padding:50px;
+	position:relative;
+	cursor: pointer;
+}
+.middletext{
+	font-family: arial;
+	font-size: 15px;
+	color: #001C8B
+}
+
+.undertext{
+	font-size: 15px; 
+	margin-top: 18px;
+	color:#636363;
+}
+
+.btn{
+	background-color: #060092;
+	padding:10px;
+	width: 40px;
+	border-radius: 5px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #1801E0;
+	padding:10px;
+	width: 40px;
+	border-radius: 5px;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+.menuwrap{
+	background-color: #164EFF;
+	margin-top: 50px;
+	height: 600px;
+	
+}
+.mobilenav{
+	display: none;
+	
+}
+.infowrapper{
+	border: #fff solid 1px;
+	width:20%;
+	height: 300px;
+	margin:0 0 0 50px ;
+	align-content: center;
+	display: inline-block;
+	margin-top: 140px
+}
+.face{
+	border-radius: 100%; 
+	margin-top: 15px;
+	cursor: pointer;
+	transition: border-radius 0.5s;
+	transition-delay: 0.1s;
+	
+}
+.face:hover {
+	border-radius: 47%;
+}
+
+.ptx{
+	text-align: center;
+}
+
+.profileimgtext{
+	color:#fff;
+	text-align: center;
+	margin-top: 5px;
+}
+.ptext{
+	color: #fff;
+	text-align: center;
+}
+.footmainwrp{
+	width: 100%;
+	
+}
+.footwrapper{
+	width:47%;
+	display:inline-block;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.ft{
+	text-align: center;
+	margin-top: 50px;
+	
+}
+.ftp{
+	text-align: center;
+	color: #737373;
+}
+
+.ftmtext{
+	margin: 30px 0 20px 0;
+}
+
+.ftdtext{
+	color:#777777;
+}
+
+.btndown{
+	background-color: #130073;
+	width: 50px;
+	padding: 8px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.btndown:hover{
+	background-color: #1604B3;
+	width: 50px;
+	padding: 8px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 30px
+}
+
+#ftltxt{
+	color:#7E7E7E; 
+}
+
+.social{
+	margin-left: 85%;
+}
+.hr{
+	border-bottom: solid #AFAFAF 1px;
+}
+/*For Tablet Screen*/
+@media screen and (max-width:800px){
+	.banner {
+	width:100%;
+	height:auto;
+	}
+	.nav ul li{
+		font-size: 17px;
+		border-right: solid #6A6A6A 1px;
+	}
+	.nav ul li:hover{
+		font-size: 15px;
+		
+	}
+	#WelcomeText{
+		font-size: 40px;
+		position: relative;
+		top:-70px;
+	}
+	.boxSize{
+		width: 70%;
+		position: relative;
+		left:0%;
+		margin: 50px 0 0 1px;
+		padding: 0;
+		border: hidden;
+		
+		
+	}
+	.boxS{
+		width: 70%;
+		position: relative;
+		left:0%;
+		margin: 50px 0 0 1px;
+		padding: 0;
+	}
+	.boxSize .middletext{
+		font-size: 25px;
+		margin-left: 1px;
+	}
+	.btn{
+		margin: 30px 0 0 3px
+	}
+	.boxS .middletext{
+		font-size: 25px;
+		margin-left: 1px;
+	}
+	.menuwrap{
+		width: 100%;
+		height:1000px;
+	}
+	.infowrapper{
+		width:30%;
+		position:relative;
+		left: 10%;
+	}
+	.social{
+		width:23%;
+		position: relative;
+		right: 70px;
+	}
+	.footmainwrp .footwrapper{
+		width: 50%;
+		margin: 50px 0 0 25%;
+	}
+
+}
+/*For Mobile Screen*/
+@media screen and (max-width:520px){
+	.banner .nav ul {display:none
+	}
+	.banner .menum:hover{
+		color: #7E7E7E;
+		
+	}
+	.banner .menum{
+		display: block;
+		}
+	#TopLogoText{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#WelcomeText{
+		font-size: 18px;
+	}
+	.banner{
+		width: 100%;
+	}
+	.middleWrapper{
+		width: 100%;
+	}
+	.boxS{
+		margin: 50px 0 0 0;
+		width: 95%;
+		padding: 0;
+		position: relative;
+		left: 6px;
+		
+	}
+	.boxSize{
+		margin: 50px 0 0 0;
+		width: 95%;
+		padding: 0;
+		position: relative;
+		left: 6px;
+	}
+	.boxS .middletext{
+		font-size: 17px;
+	}
+	.boxSize .middletext{
+		font-size: 17px;
+	}
+	.menuwrap{
+		height: 530px;
+	}
+	.infowrapper{
+		width: 30%;
+		margin-left: 20px;
+		height:160px;
+		margin-top: 50px;
+		
+	}
+	.ft{
+		font-size: 20px;
+	}
+	.footwrapper{
+		margin: 0 auto;
+		display: block;
+		margin-top: 50px;
+	}
+	.ftp{
+		margin: 5px 0 0 0;
+	}
+	.ftmtext{
+		font-size: 20px;
+	}
+	.social{
+		width: 50%;
+		position: relative;
+		right: 300px;
+		top: -20px;
+	}
+	#ftltxt{
+		position: relative;
+		top:40px;
+	}
+	.mainwrapper{
+	width:100%;
+	
+}
+	.profileimgtext{
+		font-size: 15px;
+	}
+	.ptext{
+		font-size: 12px;
+	}
+	ftimg{
+		width: 100%
+	}
+	.footwrapper{
+		width:100%;
+	}
+	.undertext{
+		margin-left: 5px;
+		font-size: 13px;
+	}
+	.footmainwrp .ftmtext{
+		text-align: center;
+	}
+	.footmainwrp .ftdtext{
+		width: 98%;
+		margin: 0 auto;
+	}
+	.footmainwrp .btndown{
+		margin-left: 5px;
+	}
+	.mobilenav{
+		border: #000000 solid 1px;
+		width: 100px;
+		position: absolute;
+		right: 3%;
+		top: 50px;
+	}
+	.mobilenav ul{
+		text-align: center;
+	}
+	.mobilenav ul li{
+		padding: 5px;
+		border-bottom: #636363 solid 1px;
+		list-style-type: none;
+		background-color: #000000;
+		z-index: 1;
+	}
+}
+
+
+
+</style>
 
 </head>
 
